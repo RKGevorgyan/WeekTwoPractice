@@ -7,9 +7,6 @@ public class Exercise {
         this.a=a;
         this.b=b;
     }
-    void consolePrint(){
-        System.out.printf("Первая переменная: %.2f\nВторая переменная: %.2f\n",a,b);
-    }
 
     public void setA(double a) {
         this.a = a;
@@ -24,5 +21,10 @@ public class Exercise {
     }
     double compare(){
         return Math.max(a, b);
+    }
+
+    @Override
+    public String toString() {
+        return "a="+a+", " +"b="+b;
     }
 }
